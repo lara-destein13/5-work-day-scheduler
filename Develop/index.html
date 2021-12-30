@@ -1,84 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
-  </head>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      />
+      <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous"
+      />
+      <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" href="style.css" />
+      <title>Work Day Scheduler</title>
+    </head>
 
-  <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <body>
+        <header class="jumbotron">
+          <h1 class="display-3">Work Day Scheduler</h1>
+          <p class="lead">A simple calendar app for scheduling your work day</p>
+          <p id="currentDay" class="lead"></p>
 
-    </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
-      <div class = "d-flex flex-row" id = "hour-0">
-        <div class = "d-flex flex-column">9AM</div>
-        <textarea class = "d-flex flex-column"></textarea>
-        <button class = "d-flex flex-column">save</button>       
-      </div>
-      <div class = "d-flex flex-row" id = "hour-1">
-        <div class = "d-flex flex-column">10AM</div>
-        <textarea class = "d-flex flex-column"></textarea>
-        <button class = "d-flex flex-column">save</button>       
-      </div>    
-      <div class = "d-flex flex-row" id = "hour-2">
-        <div class = "d-flex flex-column">11AM</div>
-        <textarea class = "d-flex flex-column"></textarea>
-        <button class = "d-flex flex-column">save</button>  
-      </div>    
-      <div class = "d-flex flex-row" id = "hour-3">
-        <div class = "d-flex flex-column">12PM</div>
-        <textarea class = "d-flex flex-column"></textarea>
-        <button class = "d-flex flex-column">save</button>  
-      </div>    
-      <div class = "d-flex flex-row" id = "hour-4">
-        <div class = "d-flex flex-column">1PM</div>
-        <textarea class = "d-flex flex-column"></textarea>
-        <button class = "d-flex flex-column">save</button>  
-      </div>    
-      <div class = "d-flex flex-row" id = "hour-5">
-        <div class = "d-flex flex-column">2PM</div>
-        <textarea class = "d-flex flex-column"></textarea>
-        <button class = "d-flex flex-column">save</button>  
-      </div>   
-      <div class = "d-flex flex-row" id = "hour-6">
-        <div class = "d-flex flex-column">3PM</div>
-        <textarea class = "d-flex flex-column"></textarea>
-        <button class = "d-flex flex-column">save</button>  
-      </div>    
-      <div class = "d-flex flex-row" id = "hour-7">
-        <div class = "d-flex flex-column">4PM</div>
-        <textarea class = "d-flex flex-column"></textarea>
-        <button class = "d-flex flex-column">save</button>  
-      </div>    
-      <div class = "d-flex flex-row" id = "hour-8">
-        <div class = "d-flex flex-column">5PM</div>
-        <textarea class = "d-flex flex-column"></textarea>
-        <button class = "d-flex flex-column">save</button>  
-      </div>     
-    </div>
-    
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  </body>
-</html>
+        </header>
+        <div class="container">
+          <div class="d-flex flex-column column">
+          <!-- Timeblocks go here -->
+            <div class="d-flex flex-row row" id="hour-0">
+              <div class="d-flex flex-column time">9AM</div>
+              <textarea class="d-flex flex-column"></textarea>
+              <button class="d-flex flex-column">save</button>       
+            </div>
+            <div class="d-flex flex-row row" id="hour-1">
+              <div class="d-flex flex-column time">10AM</div>
+              <textarea class="d-flex flex-column"></textarea>
+              <button class="d-flex flex-column">save</button>       
+            </div>    
+            <div class="d-flex flex-row row" id="hour-2">
+              <div class="d-flex flex-column time">11AM</div>
+              <textarea class="d-flex flex-column"></textarea>
+              <button class="d-flex flex-column">save</button>  
+            </div>    
+            <div class="d-flex flex-row row" id="hour-3">
+              <div class="d-flex flex-column time">12PM</div>
+              <textarea class="d-flex flex-column"></textarea>
+              <button class="d-flex flex-column">save</button>  
+            </div>    
+            <div class="d-flex flex-row row" id="hour-4">
+              <div class="d-flex flex-column time">1PM</div>
+              <textarea class="d-flex flex-column"></textarea>
+              <button class="d-flex flex-column">save</button>  
+            </div>    
+            <div class="d-flex flex-row row" id="hour-5">
+              <div class="d-flex flex-column time">2PM</div>
+              <textarea class="d-flex flex-column"></textarea>
+              <button class="d-flex flex-column">save</button>  
+            </div>   
+            <div class="d-flex flex-row row" id="hour-6">
+              <div class="d-flex flex-column time">3PM</div>
+              <textarea class="d-flex flex-column"></textarea>
+              <button class="d-flex flex-column">save</button>  
+            </div>    
+            <div class="d-flex flex-row row" id="hour-7">
+              <div class="d-flex flex-column time">4PM</div>
+              <textarea class="d-flex flex-column"></textarea>
+              <button class="d-flex flex-column">save</button>  
+            </div>    
+            <div class="d-flex flex-row row" id="hour-8">
+              <div class="d-flex flex-column time">5PM</div>
+              <textarea class="d-flex flex-column"></textarea>
+              <button class="d-flex flex-column">save</button> 
+            </div> 
+            </div>     
+          </div>
+          
+          <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        </body>
+  </html>
