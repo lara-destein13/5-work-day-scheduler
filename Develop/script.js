@@ -16,17 +16,30 @@ function colorTasks() {
             backgroundColor = "green";
         }
 
-        // var id = `hour-${i}`;
-        var selectors = `#hour-${i} .tasks`;
-        var element = document.querySelector(selectors);
-        // var element = document.getElementById(id);
+        var selector = `#hour-${i} .tasks`;
+        var element = document.querySelector(selector);
         element.style.backgroundColor = backgroundColor;
     }
 }
 
+function saveClicked() {
+    window.alert("function changed");
+}
+
+function addOnClickHandlers() {
+    for (var i = 0; i < 9; i++) {
+        var selector = `#hour-${i} button`;
+        console.log(selector);
+        var element = document.querySelector(selector);
+        element.onclick = saveClicked;   
+    }   
+}
 
 function initialize() {
     colorTasks();
+    addOnClickHandlers();
 }
+
+
 
 initialize();
