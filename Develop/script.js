@@ -3,8 +3,7 @@
 
 
 var hourNow = 11;
-
-function initialize() {
+function colorTasks() {
     console.log("hello");
     for (var i = 0; i < 9; i++) {
         var hour = i + 9;
@@ -23,6 +22,11 @@ function initialize() {
         // var element = document.getElementById(id);
         element.style.backgroundColor = backgroundColor;
     }
+}
+
+
+function initialize() {
+    colorTasks();
 }
 
 initialize();
