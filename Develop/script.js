@@ -22,8 +22,8 @@ function colorTasks() {
     }
 }
 
-function saveClicked() {
-    window.alert("function changed");
+function saveClicked(e) {
+    window.alert(e.target.dataset.hour);
 }
 
 function addOnClickHandlers() {
