@@ -1,10 +1,23 @@
 // var hourString = moment().format('H');
 // var hour = parseInt(hourString);
 
+var data = ["","","","","","","","","",""];
+
+function populateTextAreas() {
+    for (var i = 0; i < 9; i++) {
+        var selector = `#hour-${i} .tasks`;
+        console.log(selector)
+        var element = document.querySelector(selector);
+
+        element.value = "foo";
+    }
+
+    const firstString = data[i];
+    console.log(i);
+}
 
 var hourNow = 11;
 function colorTasks() {
-    console.log("hello");
     for (var i = 0; i < 9; i++) {
         var hour = i + 9;
         var backgroundColor = "";
@@ -29,7 +42,6 @@ function saveClicked(e) {
 function addOnClickHandlers() {
     for (var i = 0; i < 9; i++) {
         var selector = `#hour-${i} button`;
-        console.log(selector);
         var element = document.querySelector(selector);
         element.onclick = saveClicked;   
     }   
@@ -38,6 +50,7 @@ function addOnClickHandlers() {
 function initialize() {
     colorTasks();
     addOnClickHandlers();
+    populateTextAreas();
 }
 
 
