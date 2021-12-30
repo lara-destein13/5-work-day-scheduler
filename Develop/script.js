@@ -11,9 +11,6 @@ function populateTextAreas() {
 
         element.value = "foo";
     }
-
-    const firstString = data[i];
-    console.log(i);
 }
 
 var hourNow = 11;
