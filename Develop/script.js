@@ -1,15 +1,24 @@
 // var hourString = moment().format('H');
 // var hour = parseInt(hourString);
 
-var data = ["","","","","","","","","",""];
 
+// 
 function populateTextAreas() {
+    var tasks = [];
+    var empty = ["","","","","","","","","",];
+    var item = localStorage.getItem("tasks");
+    if (item === null) {
+        window.alert("got item");    
+        tasks = empty;
+    } else {
+        window.alert("got something");
+        tasks = JSON.parse(item);
+    }    
     for (var i = 0; i < 9; i++) {
         var selector = `#hour-${i} .tasks`;
-        console.log(selector)
+        console.log(selector);
         var element = document.querySelector(selector);
-
-        element.value = "foo";
+        element.value = tasks[i];
     }
 }
 
