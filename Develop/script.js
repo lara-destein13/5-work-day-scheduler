@@ -1,10 +1,9 @@
 // var hourString = moment().format('H');
 // var hour = parseInt(hourString);
 
+var tasks = [];
 
-// 
 function populateTextAreas() {
-    var tasks = [];
     var empty = ["","","","","","","","","",];
     var item = localStorage.getItem("tasks");
     if (item === null) {
@@ -42,8 +41,18 @@ function colorTasks() {
 }
 
 function saveClicked(e) {
-    window.alert(e.target.dataset.hour);
+    // window.alert(e.target.dataset.hour);
+    var taskNumber = (e.target.dataset.hour);
+    taskNumber = parseInt(taskNumber);
+    window.alert(taskNumber);
+
+    var textAreaSelector = `#hour-${taskNumber} .tasks`;
+    window.alert(textAreaSelector);
+    var textAreaElement = document.querySelector(textAreaSelector);
+    var textAreaValue = textAreaElement.value;
+    window.alert(textAreaValue);
 }
+
 
 function addOnClickHandlers() {
     for (var i = 0; i < 9; i++) {
