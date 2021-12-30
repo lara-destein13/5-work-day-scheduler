@@ -51,6 +51,10 @@ function saveClicked(e) {
     var textAreaElement = document.querySelector(textAreaSelector);
     var textAreaValue = textAreaElement.value;
     window.alert(textAreaValue);
+
+    tasks[taskNumber] = textAreaValue;
+    var j = JSON.stringify(tasks);
+    localStorage.setItem("tasks", j);  
 }
 
 
