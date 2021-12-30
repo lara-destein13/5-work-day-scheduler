@@ -32,6 +32,8 @@ textarea{
 
 .time {
   width: 100px;
+  border-top: 2px dashed black;
+  padding: 10px;
 }
 
 /* using this */
