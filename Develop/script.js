@@ -17,8 +17,10 @@ function initialize() {
             backgroundColor = "green";
         }
 
-        var id = `hour-${i}`;
-        var element = document.getElementById(id);
+        // var id = `hour-${i}`;
+        var selectors = `#hour-${i} .tasks`;
+        var element = document.querySelector(selectors);
+        // var element = document.getElementById(id);
         element.style.backgroundColor = backgroundColor;
     }
 }
