@@ -32,7 +32,9 @@ THEN the saved events persist
 ## Usage
 
 Application runs in the browser and can be accessed at
+https://lara-destein13.github.io/5-work-day-scheduler/
 
+<img width="884" alt="Screen Shot 2022-01-13 at 1 17 16 PM" src="https://user-images.githubusercontent.com/88476888/149399275-ee328e85-965a-4fc6-ad16-cd7eb2520742.png">
 
 
 ## Contributing
